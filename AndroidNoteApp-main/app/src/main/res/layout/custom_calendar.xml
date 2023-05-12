@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E84CC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/calendar_prev_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/previous_month"
+            android:src="@drawable/previous_icon" />
+
+        <LinearLayout
+            android:id="@+id/date_display"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date_display_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="center"
+                android:text="Thứ 2"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp" />
+
+            <Button
+                android:id="@+id/date_display_today"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#1E1037"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="5dp"
+                android:text="@string/go_to_today"
+                android:textColor="#EDEDED"
+                android:textColorHighlight="#53308F"
+                android:textColorLink="#31175E"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calendar_next_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/next_month"
+            android:src="@drawable/next_icon" />
+    </LinearLayout>
+
+    <!-- days header -->
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/sunday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/monday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/tuesday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/wednesday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/thursday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/friday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center_horizontal"
+            android:text="@string/saturday"
+            android:textColor="@color/colorNoteSubtitleText" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:numColumns="7" />
+
+</LinearLayout>

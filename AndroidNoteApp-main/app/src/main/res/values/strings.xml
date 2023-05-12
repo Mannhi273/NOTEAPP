@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Notes</string>
+    <string name="my_notes">Ghi chú của tôi</string>
+    <string name="search_notes">Tìm kiếm ghi chú</string>
+    <string name="note_title" translatable="false">Tiêu đề</string>
+    <string name="note_subtitle">Tiêu đề phụ</string>
+    <string name="type_note_here">Nội dung…</string>
+    <string name="miscellaneous">Tùy chỉnh</string>
+    <string name="pick_color">Chọn màu</string>
+    <string name="add_image">Thêm hình ảnh</string>
+    <string name="add_url">Thêm đường dẫn</string>
+    <string name="enter_url">Nhập đường dẫn…</string>
+    <string name="add">Thêm</string>
+    <string name="cancel_dialog" tools:ignore="ButtonCase">Thoát</string>
+    <string name="delete_note">Xóa ghi chú</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Bạn có muốn xóa ghi chú này không?</string>
+    <string name="please_wait">Vui lòng đợi…</string>
+    <string name="logo">Logo</string>
+    <string name="previous_month">Previous Month</string>
+    <string name="next_month">Next month</string>
+    <string name="sunday">CN</string>
+    <string name="monday">Thứ 2</string>
+    <string name="tuesday">Thứ 3</string>
+    <string name="wednesday">Thứ 4</string>
+    <string name="thursday">Thứ 5</string>
+    <string name="friday">Thứ 6</string>
+    <string name="saturday">Thứ 7</string>
+    <string name="go_to_today">Quay về hôm nay</string>
+    <string name="add_category">Chọn loại ghi chú:</string>
+    <string name="filter_all_value">#</string>
+    <string name="filter_all_text">Tất cả</string>
+    <string name="filter_study_value">1</string>
+    <string name="filter_study_text">Học tập</string>
+    <string name="filter_work_value">2</string>
+    <string name="filter_work_text">Công việc</string>
+    <string name="add_alarm">Đặt thời gian báo:</string>
+    <string name="text_pick_time">Chọn thời gian</string>
+
+    <string-array name="category">
+        <item>Mặc định</item>
+        <item>Học Tập</item>
+        <item>Công Việc</item>
+    </string-array>
+</resources>
